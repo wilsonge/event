@@ -14,7 +14,7 @@ namespace Joomla\Event;
  *
  * @since  1.0
  */
-class ListenersPriorityQueue extends \SplPriorityQueue
+class ListenersPriorityQueue extends \SplPriorityQueue implements IteratorAggregate
 {
 	/**
 	 * A decreasing counter used to compute the internal priority as an array because SplPriorityQueue dequeues elements with the same priority.
